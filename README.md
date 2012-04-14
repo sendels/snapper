@@ -1,6 +1,6 @@
 # Snapper
 
-Capture and Restore IRB console objects.
+Capture and replay IRB console commands.
 
 ## Installation
 
