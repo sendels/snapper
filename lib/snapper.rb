@@ -20,7 +20,7 @@ class Snapper
   end
 
   def self.snap(name)
-    FileUtils.mv(instance.snapper_file.path, "#{SNAPPER_DIR}/#{name}.snapper")
+    FileUtils.cp(instance.snapper_file.path, "#{SNAPPER_DIR}/#{name}.snapper")
     return true
   end
 
