@@ -21,6 +21,7 @@ class Snapper
 
   def self.snap(name)
     FileUtils.mv(instance.snapper_file.path, "#{SNAPPER_DIR}/#{name}.snapper")
+    return true
   end
 
   def self.restore(name)
