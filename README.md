@@ -1,6 +1,6 @@
 # Snapper
 
-TODO: Write a gem description
+Capture and Restore IRB console objects.
 
 ## Installation
 
@@ -16,9 +16,21 @@ Or install it yourself as:
 
     $ gem install snapper
 
+And include the following in ~/.irbrc
+    
+    require 'snapper'
+
 ## Usage
 
-TODO: Write usage instructions here
+To save the commands for current irb session:
+  
+    Snapper.snap('session_name')
+
+To replay the commands from a previously named session:
+
+    Snapper.restore('session_name')
+
+That is all.
 
 ## Contributing
 
