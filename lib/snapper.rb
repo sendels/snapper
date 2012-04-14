@@ -1,5 +1,6 @@
 require "snapper/version"
 require "snapper/irb_patch"
+require "uuid"
 
 class Snapper
   SNAPPER_DIR = ENV['SNAPPER_DIR'] || "#{ENV['HOME']}/.snapper"
